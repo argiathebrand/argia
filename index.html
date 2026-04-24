@@ -2,58 +2,68 @@
 <html>
 <head>
   <title>Argia</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: black;
-      color: white;
+      background: white;
+      color: black;
       text-align: center;
     }
 
     .container {
-      margin-top: 80px;
+      padding: 40px 20px;
     }
 
-    img.logo {
-      width: 220px;
-      margin-bottom: 20px;
+    .logo {
+      width: 200px;
+      margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 50px;
-      color: #b30000;
-      letter-spacing: 3px;
+      font-size: 40px;
+      letter-spacing: 4px;
+      margin-bottom: 30px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .product {
-      margin-top: 60px;
+      border: 1px solid #ddd;
+      padding: 20px;
     }
 
     .product img {
-      width: 250px;
-      border: 1px solid #222;
+      width: 100%;
+      height: auto;
     }
 
     .price {
-      font-size: 20px;
       margin: 10px 0;
+      font-size: 18px;
     }
 
     .btn {
-      padding: 12px 28px;
-      border: 1px solid #b30000;
-      color: #b30000;
+      padding: 10px 20px;
+      border: 1px solid black;
+      color: black;
       text-decoration: none;
       display: inline-block;
       margin-top: 10px;
-      transition: 0.3s;
     }
 
     .btn:hover {
-      background: #b30000;
+      background: black;
       color: white;
     }
+
   </style>
 </head>
 
@@ -62,15 +72,38 @@
   <div class="container">
     <img src="logo.png" class="logo">
     <h1>ARGIA</h1>
-    <p>Power. Precision. Presence.</p>
 
-    <div class="product">
-      <img src="product1.jpg">
-      <h2>Argia Signature Piece</h2>
-      <div class="price">$49.99</div>
-      <a href="#" class="btn">Buy Now</a>
+    <div class="products">
+
+      <div class="product">
+        <img src="product1.jpg">
+        <div>Product 1</div>
+        <div class="price">$49.99</div>
+        <a href="#" class="btn">Buy</a>
+      </div>
+
+      <div class="product">
+        <img src="product2.jpg">
+        <div>Product 2</div>
+        <div class="price">$59.99</div>
+        <a href="#" class="btn">Buy</a>
+      </div>
+
+      <div class="product">
+        <img src="product3.jpg">
+        <div>Product 3</div>
+        <div class="price">$39.99</div>
+        <a href="#" class="btn">Buy</a>
+      </div>
+
+      <div class="product">
+        <img src="product4.jpg">
+        <div>Product 4</div>
+        <div class="price">$69.99</div>
+        <a href="#" class="btn">Buy</a>
+      </div>
+
     </div>
-
   </div>
 
 </body>
